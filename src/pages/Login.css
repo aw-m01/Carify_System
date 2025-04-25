@@ -1,0 +1,102 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #b9c8db;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 400px;
+}
+
+.logo-image {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  font-size: 14px;
+}
+
+.login-button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #718bab;
+}
+
+.auth-redirect-text {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.auth-redirect-link {
+  color: #718bab;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-redirect-link:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+/* Success Message Styling */
+.success-message {
+  color: #28a745; /* Green color for success */
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Success Message Box Styling */
+.success-message-box {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #c3e6cb; /* Light green border */
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success-message-box p {
+  margin: 0; /* Remove default margin for inner paragraph */
+}

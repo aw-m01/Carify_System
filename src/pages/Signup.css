@@ -1,0 +1,117 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b9c8db;
+    padding: 50px 0; /* Add vertical padding to create space above and below the card */
+
+  }
+  
+  .signup-card {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 400px;
+   
+  }
+  
+  .logo-image {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c1c1c1;
+    font-size: 14px;
+  }
+  
+  .signup-button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-button:hover {
+    background-color: #718bab;
+  }
+  
+  /* Success Message */
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* Success Message Box */
+.message-box {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.success-message-box {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  border: 1px solid #c3e6cb; /* Green border */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* Redirect Text */
+.login-redirect-text {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Redirect Link */
+.login-redirect-link {
+  color: #718bab; /* Blue color for the link */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+.login-redirect-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color:  #2c3e50;
+}

@@ -1,0 +1,255 @@
+/* ReportRecords.css */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #013457;
+  --text-color: #333;
+  --background-color: #f8f9fa;
+  --success-color: #27ae60;
+  --error-color: #e74c3c;
+}
+
+.report-records-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.report-title {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Two-Panel Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  background-color: #e8ecef;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.left-panel h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.left-panel p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.left-panel .detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+
+.left-panel .detail-label {
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-right: 1rem;
+}
+
+.left-panel .detail-value {
+  color: var(--text-color);
+  text-align: right;
+  flex-grow: 1;
+}
+
+/* Right Panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Record Card (Right Panel) */
+.record-card {
+  background-color: #e8ecef;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.record-card.selected {
+  background-color: #b9c8db;
+}
+
+.record-card:hover {
+  transform: translateY(-3px);
+}
+
+.record-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.record-card p strong {
+  color: #333;
+}
+
+/* Loading, Error, and No Records Messages */
+.loading-indicator {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  padding: 2rem;
+}
+
+.error-message {
+  color: var(--error-color);
+  background-color: #f8d7da;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.no-records {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Existing styles for detail items */
+.detail-item {
+  margin: 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-right: 1rem;
+}
+
+.detail-value {
+  color: var(--text-color);
+  text-align: right;
+  flex-grow: 1;
+  max-width: 200px; /* Limit the width to prevent overflow */
+  overflow: hidden; /* Disable truncation */
+  white-space: nowrap; /* Enable line breaks */
+  text-overflow: ellipsis; /* Show ellipsis for truncated text */
+
+}
+
+.timestamp {
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.location {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.detail-value {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-panel,
+  .right-panel {
+    flex: 1;
+  }
+}
+/* Add this to your existing ReportRecords.css */
+.record-details .car-image {
+  width: 300px; /* Adjust width as needed */
+  height: 250px; /* Maintain aspect ratio */
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block; /* Ensure it behaves as a block element */
+}
+/* Report Details Box */
+.report-details-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.report-details-box h3 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.report-details-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+/* Status Styling */
+.status-found {
+  color: green;
+  font-weight: bold;
+}
+
+.status-not-found {
+  color: red;
+  font-weight: bold;
+}
+
+/* Adjustments to Existing Styles */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-panel,
+  .right-panel {
+    flex: 1;
+  }
+}

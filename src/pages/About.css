@@ -1,0 +1,53 @@
+/* General container for the About page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Hero section styling */
+  .hero {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .hero h3 {
+    font-size: 2.5rem; /* Large, bold heading */
+    font-weight: 700;
+    color: #1a2e5a; /* Dark blue for professionalism */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: justify !important;
+  }
+  
+  /* Content container styling */
+  .about-content-container {
+    max-width: 800px; /* Constrain width for readability */
+    background-color: #ffffff; /* White background for content */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-content-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Paragraph styling */
+  .about-content-container p {
+    font-size: 1.1rem; /* Readable font size */
+    line-height: 1.6; /* Comfortable line spacing */
+    color: #333333; /* Dark gray for readability */
+    margin: 0;
+  }
+  
+  

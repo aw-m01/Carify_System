@@ -1,0 +1,185 @@
+/* Main layout */
+.reports-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+/* Search bar container */
+.search-container {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #2c3e50;
+  padding: 10px;
+  width: 900px;
+  height: 50px;
+  max-width: 500px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+/* New Report button */
+.new-report-button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.new-report-button:hover {
+  background-color: #555;
+}
+
+/* Reports Grid */
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+/* Individual Report Card */
+.report-card {
+  background: linear-gradient(to bottom, #e0e4eb, #c0c5ce);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.report-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.report-card hr {
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.report-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.loading-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.report-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  border-left: 4px solid #2c3e50;
+}
+
+.report-card:hover {
+  transform: translateY(-3px);
+}
+
+.report-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.report-card p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.view-records-button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.view-records-button:hover{
+  background-color: #718bab;
+}
+
+/* Button Group for View Records and Delete Report */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Delete Report Button */
+.delete-report-button {
+  background-color: #e74c3c; /* Red color for delete action */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+  height: 34.7px;
+  position: relative;
+  top: 15px; /* Move the button down slightly */
+}
+
+.delete-report-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Icon Styling */
+.delete-report-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Status Found (Green Font) */
+.status-found {
+  color: rgb(9, 188, 9);
+  font-weight: bold;
+}
+
+/* Status Not Found (Red Font) */
+.status-not-found {
+  color: red;
+  font-weight: bold;
+}
