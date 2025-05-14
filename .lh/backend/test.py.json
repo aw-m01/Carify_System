@@ -1,0 +1,22 @@
+{
+    "sourceFile": "backend/test.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1745622244669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1745622492564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import psutil\r\n-import torch\r\n+from ultralytics import YOLO\r\n \r\n-# Load your model\r\n-model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/yolov8l.pt')\r\n+# Load your YOLOv8 model\r\n+model = YOLO('models/yolov8l.pt')\r\n \r\n\\ No newline at end of file\n # Check memory usage\r\n process = psutil.Process()\r\n-print(f\"Memory usage: {process.memory_info().rss / 1024 ** 2} MB\")\n+memory_usage = process.memory_info().rss / 1024 ** 2  # Convert bytes to MB\r\n+print(f\"Memory usage: {memory_usage:.2f} MB\")\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1745622244669,
+            "name": "Commit-0",
+            "content": "import psutil\r\nimport torch\r\n\r\n# Load your model\r\nmodel = torch.hub.load('ultralytics/yolov5', 'custom', path='models/yolov8l.pt')\r\n\r\n# Check memory usage\r\nprocess = psutil.Process()\r\nprint(f\"Memory usage: {process.memory_info().rss / 1024 ** 2} MB\")"
+        }
+    ]
+}
