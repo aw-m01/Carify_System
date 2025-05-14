@@ -6,7 +6,7 @@ import "./ReportRecords.css";
 const ReportRecords = () => {
   const { id } = useParams();
   const [records, setRecords] = useState([]);
-  const [reportDetails, setReportDetails] = useState(null); // New state for report details
+  const [reportDetails, setReportDetails] = useState(null); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [selectedRecord, setSelectedRecord] = useState(null);
