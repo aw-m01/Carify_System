@@ -9,11 +9,11 @@ import NewReport from "./pages/NewReport";
 import Notifications from "./pages/Notifications";
 import ReportRecords from "./pages/ReportRecords";
 import About from "./pages/About";
-import { NotificationProvider } from "./pages/NotificationContext"; // Adjust path as needed
+import { NotificationProvider } from "./pages/NotificationContext"; 
 function App() {
   
   return (
-   <NotificationProvider> {/* Wrap the entire app with NotificationProvider */} 
+  
     <Routes>
       {/* Public Routes */}
       <Route path="/" element={<Gate />} />
@@ -24,54 +24,64 @@ function App() {
       <Route
         path="/home"
         element={
+          <NotificationProvider>  
           <ProtectedRoute>
               <Home />
           </ProtectedRoute>
+          </NotificationProvider>  
         }
       />
       <Route
         path="/reports"
         element={
+          <NotificationProvider>  
           <ProtectedRoute>
               <Reports />
           </ProtectedRoute>
+          </NotificationProvider>  
         }
       />
       <Route
         path="/new-report"
         element={
+          <NotificationProvider>  
           <ProtectedRoute>
               <NewReport />
           </ProtectedRoute>
+          </NotificationProvider>  
         }
       />
       <Route
         path="/notifications"
         element={
+          <NotificationProvider>  
           <ProtectedRoute>
               <Notifications />
           </ProtectedRoute>
+          </NotificationProvider>  
         }
       />
       <Route
         path="/report/:id"
         element={
+          <NotificationProvider>  
           <ProtectedRoute>
               <ReportRecords />
           </ProtectedRoute>
+          </NotificationProvider>  
         }
       />
       <Route
         path="/about"
         element={
+          <NotificationProvider>  
           <ProtectedRoute>
-              <About />
-            
+              <About />            
           </ProtectedRoute>
+          </NotificationProvider>  
         }
       />
     </Routes>
-   </NotificationProvider>
   );
 }
 
