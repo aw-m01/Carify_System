@@ -6,7 +6,7 @@ import "./ReportRecords.css";
 const ReportRecords = () => {
   const { id } = useParams();
   const [records, setRecords] = useState([]);
-  const [reportDetails, setReportDetails] = useState(null); // New state for report details
+  const [reportDetails, setReportDetails] = useState(null); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [selectedRecord, setSelectedRecord] = useState(null);
@@ -71,7 +71,6 @@ const ReportRecords = () => {
     fetchRecords();
   }, [id]);
 
-  // Auto-select the first record in the sorted list (highest Record_ID)
   useEffect(() => {
     if (records.length > 0 && !selectedRecord) {
       setSelectedRecord(records[0]); // Select the record with the highest Record_ID
@@ -82,10 +81,9 @@ const ReportRecords = () => {
     setSelectedRecord(record);
   };
 
-  // Calculate the report-specific index in descending order
   const getRecordIndex = (record) => {
     const index = records.indexOf(record); // 0-based index in the sorted array
-    return records.length - index; // Convert to descending order (e.g., for 4 records, index 0 -> 4, index 1 -> 3, etc.)
+    return records.length - index; // Convert to descending order 
   };
 
   return (

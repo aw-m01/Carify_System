@@ -148,7 +148,7 @@
 
 /* Delete Report Button */
 .delete-report-button {
-  background-color: #e74c3c; /* Red color for delete action */
+  background-color: #e74c3c; 
   color: white;
   padding: 8px 16px;
   border: none;
@@ -156,14 +156,14 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 5px; /* Space between icon and text */
+  gap: 5px; 
   height: 34.7px;
   position: relative;
-  top: 15px; /* Move the button down slightly */
+  top: 15px;
 }
 
 .delete-report-button:hover {
-  background-color: #c0392b; /* Darker red on hover */
+  background-color: #c0392b; 
 }
 
 /* Icon Styling */

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     background: #b9c8db;
-    padding: 50px 0; /* Add vertical padding to create space above and below the card */
+    padding: 50px 0; 
 
   }
   
@@ -79,9 +79,9 @@
 }
 
 .success-message-box {
-  background-color: #d4edda; /* Light green background */
-  color: #155724; /* Dark green text */
-  border: 1px solid #c3e6cb; /* Green border */
+  background-color: #d4edda; 
+  color: #155724; 
+  border: 1px solid #c3e6cb; 
 }
 
 /* Error Message */
@@ -106,12 +106,12 @@
 
 /* Redirect Link */
 .login-redirect-link {
-  color: #718bab; /* Blue color for the link */
-  text-decoration: none; /* Remove underline */
+  color: #718bab; 
+  text-decoration: none; 
   font-weight: bold;
 }
 
 .login-redirect-link:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
   color:  #2c3e50;
 }

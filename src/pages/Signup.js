@@ -10,9 +10,9 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [registrationStatus, setRegistrationStatus] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
-  const [passwordError, setPasswordError] = useState(""); // For password policy errors
-  const [confirmPasswordError, setConfirmPasswordError] = useState(""); // For confirm password errors
-  const [emailError, setEmailError] = useState(""); // For email validation errors
+  const [passwordError, setPasswordError] = useState(""); 
+  const [confirmPasswordError, setConfirmPasswordError] = useState(""); 
+  const [emailError, setEmailError] = useState(""); 
   const navigate = useNavigate();
   
   // Password Policy Regex (allows only @, $, !, _ as special characters)

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh; /* Adjusted from 130vh to 100vh */
+    height: 150vh; 
 }
 
 .report-form {
@@ -11,25 +11,24 @@
     border: 2px solid #2c3e50;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 500px;
-    text-align: left; /* Align text to the left by default */
+    text-align: left; 
     margin-bottom: 300px;
     color: black;
 }
 
 .center-title {
-    text-align: center; /* Center the "New Report" title */
-    margin-bottom: 20px; /* Add some space below the title */
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .form-group {
-    margin-bottom: 10px; /* Reduced space between form groups */
-}
+    margin-bottom: 10px; 
 
 .report-form label {
-    display: inline-block; /* Allow labels to be inline with inputs */
-    margin-bottom: 5px; /* Reduced space between label and input */
+    display: inline-block; 
+    margin-bottom: 5px; 
     font-weight: bold;
 }
 
@@ -37,7 +36,7 @@
 .report-form input[type="file"] {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px; /* Reduced space between input fields */
+    margin-bottom: 10px; 
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -46,15 +45,15 @@
 .report-form select {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px; /* Consistent spacing with other inputs */
+    margin-bottom: 10px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: white;
     font-size: 16px;
     color: #333;
-    appearance: none; /* Remove default arrow styling */
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Custom arrow icon */
     background-repeat: no-repeat;
     background-position: right 10px center;
@@ -62,9 +61,9 @@
 }
 
 .report-form select:focus {
-    border-color: #2c3e50; /* Highlight border on focus */
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 5px rgba(44, 62, 80, 0.5); /* Add a subtle glow effect */
+    border-color: #2c3e50; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(44, 62, 80, 0.5);
 }
 
 
@@ -87,7 +86,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh; /* Adjusted from 130vh to 100vh */
+    height: 150vh; 
 }
 
 .report-form {
@@ -95,25 +94,23 @@
     border: 2px solid #2c3e50;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 500px;
-    text-align: left; /* Align text to the left by default */
+    text-align: left; 
     margin-bottom: 100px;
     color: black;
 }
 
 .center-title {
-    text-align: center; /* Center the "New Report" title */
-    margin-bottom: 20px; /* Add some space below the title */
-}
+    text-align: center; 
+    margin-bottom: 20px; 
 
 .form-group {
-    margin-bottom: 10px; /* Reduced space between form groups */
-}
+    margin-bottom: 10px; 
 
 .report-form label {
-    display: inline-block; /* Allow labels to be inline with inputs */
-    margin-bottom: 5px; /* Reduced space between label and input */
+    display: inline-block;
+    margin-bottom: 5px; 
     font-weight: bold;
 }
 
@@ -121,7 +118,7 @@
 .report-form input[type="file"] {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px; /* Reduced space between input fields */
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -145,7 +142,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh; /* Adjusted from 130vh to 100vh */
+    height: 150vh; 
     margin-top: 0px;
 
 }
@@ -155,24 +152,24 @@
     border: 2px solid #2c3e50;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 500px;
-    text-align: left; /* Align text to the left by default */
+    text-align: left; 
     color: black;
 }
 
 .center-title {
-    text-align: center; /* Center the "New Report" title */
-    margin-bottom: 20px; /* Add some space below the title */
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .form-group {
-    margin-bottom: 10px; /* Reduced space between form groups */
+    margin-bottom: 10px; 
 }
 
 .report-form label {
-    display: inline-block; /* Allow labels to be inline with inputs */
-    margin-bottom: 5px; /* Reduced space between label and input */
+    display: inline-block; 
+    margin-bottom: 5px; 
     font-weight: bold;
 }
 
@@ -180,7 +177,7 @@
 .report-form input[type="file"] {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px; /* Reduced space between input fields */
+    margin-bottom: 10px; 
     border: 1px solid #ccc;
     border-radius: 4px;
 }

@@ -4,8 +4,8 @@ const { Pool } = require('pg');
 const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
-  database: 'Carify', // Replace with your actual database name
-  password: '25gr14', // Replace with your actual password
+  database: 'Carify', 
+  password: '25gr14', 
   port: 5432,
 });
 
@@ -19,7 +19,6 @@ async function checkDatabaseConnection() {
   } catch (err) {
     console.error('Error connecting to the database:', err);
   } finally {
-    // Close the pool to release resources
     pool.end();
   }
 }

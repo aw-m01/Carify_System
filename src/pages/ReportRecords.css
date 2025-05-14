@@ -156,10 +156,10 @@
   color: var(--text-color);
   text-align: right;
   flex-grow: 1;
-  max-width: 200px; /* Limit the width to prevent overflow */
-  overflow: hidden; /* Disable truncation */
-  white-space: nowrap; /* Enable line breaks */
-  text-overflow: ellipsis; /* Show ellipsis for truncated text */
+  max-width: 200px; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
 
 }
 
@@ -193,12 +193,12 @@
 }
 /* Add this to your existing ReportRecords.css */
 .record-details .car-image {
-  width: 300px; /* Adjust width as needed */
-  height: 250px; /* Maintain aspect ratio */
+  width: 300px; 
+  height: 250px; 
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  display: block; /* Ensure it behaves as a block element */
+  display: block; 
 }
 /* Report Details Box */
 .report-details-box {
