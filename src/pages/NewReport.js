@@ -32,6 +32,48 @@ export default function NewReport(){
     6: "white",
     7: "yellow",
   };
+  const MODEL_OPTIONS = [
+    "Changan Alsvin",
+    "Changan CS95",
+    "Chevrolet Captiva",
+    "Chevrolet Silverado",
+    "Honda Accord",
+    "Honda Odyssey",
+    "Hyundai Accent",
+    "Hyundai Elantra",
+    "Hyundai Sonata",
+    "Hyundai Tucson",
+    "Hyundai ix35",
+    "Isuzu D-Max",
+    "Jeep Wrangler",
+    "KIA Borrego",
+    "KIA K5",
+    "Kia Cerato",
+    "Kia Sportage",
+    "Land Rover Discovery",
+    "Land Rover Range Rover",
+    "Mercedes-Benz C-Class",
+    "Mercedes-Benz GLK-Class",
+    "Mitsubishi Outlander",
+    "Mitsubishi Pajero Sport",
+    "Nissan Altima",
+    "Nissan Murano",
+    "Nissan Patrol",
+    "Nissan Qashqai",
+    "Suzuki Brezza",
+    "Suzuki Dzire",
+    "Suzuki Jimny",
+    "Suzuki Swift",
+    "Toyota Camry",
+    "Toyota Corolla",
+    "Toyota FJ Cruiser",
+    "Toyota Fortuner",
+    "Toyota Hilux",
+    "Toyota Land Cruiser",
+    "Toyota Prado",
+    "Toyota Yaris",
+    "Volkswagen Tiguan"
+  ];
 
 
     // Function to validate plate number in real-time
@@ -126,15 +168,20 @@ export default function NewReport(){
                     
                     <div className="form-group">
                         <label htmlFor="model">Model</label>
-                        <input
-                            type="text"
-                            id="model"
-                            name="model"
-                            placeholder="Enter Car Model"
-                            value={formData.model}
-                            onChange={handleChange}
-                            required
-                        />
+                        <select
+                             id="model"
+                             name="model"
+                             value={formData.model}
+                             onChange={handleChange}
+                             required
+                             >
+                         <option value="" disabled>Select a model</option>
+                           {MODEL_OPTIONS.map((model, index) => (
+                              <option key={index} value={model}>
+                               {model}
+                           </option>
+                          ))}
+                       </select>
                     </div>
                     
                     <div className="form-group">
