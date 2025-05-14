@@ -6,9 +6,9 @@ import axios from "axios"; // Add axios import
 import "./Reports.css";
 
 const Reports = () => {
-    const [reports, setReports] = useState([]); // All reports fetched from the API
-    const [searchQuery, setSearchQuery] = useState(""); // Input field value
-    const [filteredReports, setFilteredReports] = useState([]); // Filtered reports to display
+    const [reports, setReports] = useState([]); 
+    const [searchQuery, setSearchQuery] = useState(""); 
+    const [filteredReports, setFilteredReports] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
@@ -33,7 +33,7 @@ const Reports = () => {
         };
 
         fetchReports();
-    }, []); // Empty dependency array since we fetch once on mount
+    }, []); 
 
     // Function to handle deleting a report
     const handleDeleteReport = async (plateNumber) => {
