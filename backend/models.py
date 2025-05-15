@@ -218,10 +218,6 @@ class ColorLine:
 
         return result
 
-
-
-
-
 # ==================== Core Algorithms ====================
 def atmospheric_light(img, gray):
     top_num = int(img.shape[0] * img.shape[1] * 0.001)
@@ -323,43 +319,21 @@ COLOR_MAP = {
 }
 
 CAR_MODELS = [
-    "Audi_A4L_2009-2015", "Audi_A6L_2009-2014", "Audi_Q5_2010-2013", "Audi_Q7_2010-2014",
-    "BAW_E Series hatchback_2012-2013", "BWM_2 Series Active Tourer_2014-2015",
-    "BWM_X1_2010-2014", "BWM_X3_2009-2014", "BWM_X5_2008-2014", "BYD_F0_2009-2015",
-    "BYD_F3_2009-2015", "BYD_L3_2010-2015", "BYD_S7_2013-2015", "BYD_e6_2009-2014",
-    "Benz_C Class estate_2010-2014", "Benz_E Class AMG_2012-2014", "Benz_G Class AMG_2009-2014",
-    "Benz_GL Class_2011-2014","Benz_GLA Class_2013-2015","Benz_GLK Class_2008-2014",
-    "Benz_M Class_2010-2014","Cadillac_ELR_2014","Changan_CS35_2012-2014","Chevy_Aveo sedan_2011-2014",
-    "Chevy_Camaro_2010-2015","Chevy_Captiva_2010-2014","Chevy_Lova_2009-2010","Chevy_Sail sedan_2010-2014",
-    "Chevy_Silverado_2014-2015","Chevy_Sonic_2010-2014","Chevy_Volt_2011-2015",
-    "Dodge_Rampage_2006-2015","Ford_Ecosport_2012-2013", "Ford_Edge_2010-2015",
-    "Ford_Explorer_2011-2016","Ford_F-150_2012-2016","Ford_Falcon_2008-2014",
-    "Ford_Flex_2004-2013","Ford_Fusion_2010-2013","Ford_Kuga_2008-2015",
-    "Ford_Territory_2011-2014","Geely_Classic Imperial hatchback_2009-2013","Geely_Panda_2009-2014",
-    "Geely_TX4_2009-2012","GreatWall_Great Wall C20R_2011-2014","GreatWall_Great Wall C30_2010-2015",
-    "GreatWall_Wingle 6_2014","GreatWall_Xuanli CROSS_2009-2011","Honda_CR-Z_2010-2013",
-    "Honda_City_2009-2014","Honda_Crider_2013-2015","Honda_Crosstour_2011-2014",
-    "Honda_Elysion_2012-2015","Honda_Fit_2008-2014","Honda_Insight_2010-2013",
-    "Honda_Odyssey_2009-2015","Honda_Spirior_2009-2015","Honda_Vezel_2015",
-    "Hyundai_Elantra_2004-2011","Hyundai_Genesis_2015","Hyundai_Grand SantaFe_2013",
-    "Hyundai_Sonata_2008-2009","Hyundai_Tucson_2006-2013","Hyundai_i10_2011-2014",
-    "Hyundai_ix35_2010-2015","Jeep_Wrangler_2009-2014","KIA_Borrego_2008-2015",
-    "KIA_K5_2011-2015","KIA_Kaizun_2010-2014","KIA_New Carens_2011-2013",
-    "KIA_Picanto_2012-2015","LAND-ROVER_Defender_2004-2015","LAND-ROVER_Discovery_2010-2015",
-    "LAND-ROVER_Freelander_2010-2015","LAND-ROVER_Range Rover_2010-2015","Mahindra XUV700",
-    "Maruti Suzuki Brezza","Maruti Suzuki Dzire","Maruti Suzuki Swift",
-    "Mitsubishi_Lancer EX_2010-2015","Mitsubishi_Outlander abroad version_2010-2014",
-    "Mitsubishi_Pajero Sport_2011-2014","Mitsubishi_XR-PHEV_2013-2015","Mitsubishi_Zinger_2008-2011",
-    "Mitsubishi_i_2008-2012","Nissan_Altima_2005-2015","Nissan_GT-R_2009-2015",
-    "Nissan_Juke_2011-2015","Nissan_Leaf_2011-2014","Nissan_Murano_2011-2014",
-    "Nissan_Pathfinder_2005-2013","Nissan_Patrol_2004-2014","Nissan_Pulsar_2014-2015",
-    "Nissan_Qashqai_2010-2014","Nissan_Teana_2008-2014","Nissan_Tiida_2011-2014",
-    "Suzuki_Jimny_2011-2015","Suzuki_Kazishi_2010-2014","Suzuki_Tianyu SX4 hatchback_2009-2013",
-    "Toyota Fortuner","Toyota_Avensis_2009-2015","Toyota_Aygo_2009-2015",
-    "Toyota_Corolla_2011-2014","Toyota_FJ Cruiser_2007-2014","Toyota_Levin_2014",
-    "Toyota_Prado_2006-2014","Toyota_Previa_2004-2012","Toyota_Reiz_2010-2013",
-    "Toyota_Sequoia_2008-2012","Toyota_Undra_2009-2015","Toyota_Verso_2010-2014",
-    "Volkswagen_Fox_2004-2015","Volkswagen_Tiguan_2012-2015"
+    "Changan Alsvin","Changan CS95","Chevrolet Captiva",
+    "Chevrolet Silverado","Honda Accord","Honda Odyssey",
+    "Hyundai Accent","Hyundai Elantra", "Hyundai Sonata",
+    "Hyundai Tucson","Hyundai ix35","Isuzu D-Max",
+    "Jeep Wrangler","KIA Borrego","KIA K5",
+    "Kia Cerato","Kia Sportage","Land Rover Discovery",
+    "Land Rover Range Rover","Mercedes-Benz C-Class",
+    "Mercedes-Benz GLK-Class","Mitsubishi Outlander",
+    "Mitsubishi Pajero Sport","Nissan Altima",
+    "Nissan Murano","Nissan Patrol","Nissan Qashqai",
+    "Suzuki Brezza","Suzuki Dzire","Suzuki Jimny",
+    "Suzuki Swift","Toyota Camry","Toyota Corolla",
+    "Toyota FJ Cruiser","Toyota Fortuner","Toyota Hilux",
+    "Toyota Land Cruiser","Toyota Prado","Toyota Yaris",
+    "Volkswagen Tiguan"
 ]
 
 CHARACTERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'D', 'E', 'G',
@@ -397,9 +371,12 @@ columns = [
 ]
 
 pd.DataFrame(columns=columns).to_csv(csv_path, index=False)
-#"rtsp://admin:Gr14_0425@192.168.1.147/Preview_01_main"
-# Initialize video capture
-cap = cv2.VideoCapture(2)
+#for camera streaming
+#"rtsp://admin:Gr14_0425@192.168.1.74/Preview_01_sub"
+
+# Initialize video capture, 1 for phone, 0 for webcam
+cap = cv2.VideoCapture(1)
+
 cap.set(3, 3840)
 cap.set(4, 2160)
 
@@ -453,13 +430,28 @@ def recognize_plate(plate_img):
     overall_conf = np.mean(char_confs) if char_confs else 0.0
 
     return plate_text, overall_conf, char_confs
-
-
-
   
+FASTAPI_URL_UPLOAD = "http://64.227.128.31:8000/upload_images"
 
-
-
+def send_images_to_backend(vehicle_path, plate_path=None):
+    """
+    Sends vehicle and plate images to the FastAPI backend.
+    """
+    try:
+        files = []
+        if os.path.exists(vehicle_path):
+            files.append(("files", (os.path.basename(vehicle_path), open(vehicle_path, "rb"))))
+        if plate_path and os.path.exists(plate_path):
+            files.append(("files", (os.path.basename(plate_path), open(plate_path, "rb"))))
+        
+        if files:
+            response = requests.post(FASTAPI_URL_UPLOAD, files=files)
+            if response.status_code == 200:
+                print("Images successfully uploaded to backend!")
+            else:
+                print(f"Failed to upload images. Status code: {response.status_code}, Response: {response.text}")
+    except Exception as e:
+        print(f"Error uploading images to backend: {str(e)}")
 
 while True:
     success, frame = cap.read()
@@ -532,14 +524,14 @@ while True:
 
                     plate_path = f"{output_folder}/{timestamp}_plate.jpg"
                     cv2.imwrite(plate_path, plate_crop)
+                  
+                    
                     plate_conf = float(plate.conf[0])
                     plate_number, overall_char_conf, char_confs = recognize_plate(plate_crop)
                     break
 
-
-            
-           
-
+            # Upload images to the backend
+            send_images_to_backend(vehicle_path, plate_path if plate_path != "N/A" else None)
 
             # Prepare data record
             data = {
@@ -564,7 +556,7 @@ while True:
             }
           
           
-            FASTAPI_URL = "http://localhost:8000/detections"
+            FASTAPI_URL = "http://64.227.128.31:8000/detections"
           
             def send_to_backend(data):  
                 """
@@ -580,9 +572,7 @@ while True:
                     print(f"Error sending data to backend: {str(e)}")
 
             
-            base_url = "http://localhost:8000/static-detections/"  # Updated to match the renamed static mount
-            
-
+            base_url = "http://64.227.128.31/static-detections/"  # Updated to match the renamed static mount
 
             # Hardcoded Google Maps link
             google_maps_link = "https://maps.app.goo.gl/T7GdEXA2BUMW9PYr7"
@@ -599,8 +589,6 @@ while True:
             }
             # Send data to FastAPI backend
             send_to_backend(detection_data)
-
-
 
             # Save to CSV
             pd.DataFrame([data]).to_csv(csv_path, mode='a', header=False, index=False)
