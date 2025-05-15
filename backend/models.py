@@ -371,8 +371,6 @@ columns = [
 ]
 
 pd.DataFrame(columns=columns).to_csv(csv_path, index=False)
-#for camera streaming
-#"rtsp://admin:Gr14_0425@192.168.1.74/Preview_01_sub"
 
 # Initialize video capture, 1 for phone, 0 for webcam
 cap = cv2.VideoCapture(1)
